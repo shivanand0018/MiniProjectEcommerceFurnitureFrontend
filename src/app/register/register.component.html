@@ -1,0 +1,32 @@
+<div id="register">
+    <h2>Register here...</h2>
+    <form [formGroup]="registerForm">
+        <div>
+            <label for="email">Email-Id</label>
+            <input type="text" formControlName="email" placeholder="Enter Email-Id" class="form-control">
+        </div>
+        <div *ngIf="email.invalid && (email.dirty||email.touched)" class="alert alert-danger">
+            <div *ngIf="email.errors?.['required']">
+                email is required.
+            </div>
+        </div>
+        <label for="password">Password</label>
+        <input type="password" formControlName="password" placeholder="Enter Password" class="form-control"><br>
+        <div *ngIf="password.invalid && (password.dirty||password.touched)" class="alert alert-danger">
+            <div *ngIf="password.errors?.['required']">
+                password is required.
+            </div>
+        </div> 
+        <label for="rePassword">Re-Password</label>
+        <input type="password" formControlName="rePassword" placeholder="Re-enter Password" class="form-control">
+        <div *ngIf="rePassword.invalid && (rePassword.dirty||rePassword.touched)" class="alert alert-danger">
+            <div *ngIf="rePassword.errors?.['required']">
+                password is required.
+            </div>
+        </div>
+        
+    </form>
+    <button color="primary" [disabled]="!registerForm.valid" mat-raised-button
+    (click)=register(registerForm.value)>Register</button>
+    
+</div>

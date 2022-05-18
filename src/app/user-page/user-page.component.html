@@ -1,0 +1,19 @@
+<h1>View Products</h1>
+
+<mat-card class="card" *ngFor="let furniture of Furniture">
+    <mat-card-title >{{furniture.productName}}</mat-card-title>
+    <mat-card-content >
+      Size: {{furniture.productSize}}
+    </mat-card-content>
+    <h2>Cost: {{furniture.productPrice}}/-</h2>
+    
+    <mat-select class="dropdown" [formControl]="selected">
+      <mat-option value="">Quantity</mat-option>
+      <mat-option value="1">1</mat-option>
+      <mat-option value="2">2</mat-option>
+      <mat-option value="3">3</mat-option>
+    </mat-select>
+    <mat-card-actions>
+      <button mat-raised-button (click)="cart(furniture)">Add to Cart</button>
+    </mat-card-actions>
+</mat-card>

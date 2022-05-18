@@ -1,0 +1,53 @@
+.card {
+    max-width: 1300px;
+    height: 2.5cm;
+}
+
+.card1 {
+    width: 225px;
+    height: 5cm;
+    float: right;
+    right: 10%;
+    margin-top: 5px;
+}
+
+h2
+{
+    position: absolute;
+    right: 20%;
+    top: 25%;
+}
+
+h3
+{
+    position: absolute;
+    right: 35%;
+    top: 28%;
+}
+
+.multiply
+{
+    position: absolute;
+    right: 33%;
+    top: 28%;
+}
+
+.total{
+    position: absolute;
+    right:2%;
+    top: 24%;
+}
+
+button
+{
+    position: absolute;
+    top: 60%;
+    left: 15%;
+}
+
+.delete
+{
+    position: absolute;
+    right: 45%;
+    top: 30%;
+}

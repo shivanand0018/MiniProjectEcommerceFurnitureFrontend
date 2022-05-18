@@ -1,0 +1,18 @@
+<h1>Your Cart</h1>
+<mat-card class="card" *ngFor="let furniture of Furniture">
+    <mat-card-title>{{furniture.product.productName}}</mat-card-title>
+    <mat-card-content>
+      Size: {{furniture.product.productSize}}
+    </mat-card-content>
+    <mat-icon class="delete" (click)="delete(furniture.id)">delete</mat-icon>
+    <h3>Quantity:   {{furniture.quantity}}</h3>
+    <h1 class="multiply">*</h1>
+    <h2>Cost: {{furniture.product.productPrice}}/-</h2>
+    
+    <h1 class="total">=  Total= {{furniture.quantity*furniture.product.productPrice}}</h1>
+</mat-card>
+
+<mat-card class="card1">
+    <h2 class="total">Total Cart value= {{total}}</h2>
+    <button mat-raised-button color="primary">Proceed to Checkout</button>
+</mat-card>

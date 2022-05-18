@@ -1,0 +1,19 @@
+.card {
+    max-width: 600px;
+    float: left;
+    margin-left: 35px;
+    width: 800px;
+    margin-top: 15px;
+    
+  }
+
+  button
+  {
+    position: absolute;
+    right: 5%;
+    top: 30%;
+  }
+  h1{
+    text-align: center;
+    text-decoration: underline;
+  }

@@ -1,0 +1,11 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      <button mat-button routerLink="user" title="Home"><h2>Furniture e-World</h2></button>
+      <button mat-button class="cart" routerLink="cart" title="Cart"><mat-icon >add_shopping_cart</mat-icon></button>
+      <button class="logout" (click)="logout()" title="LogOut" mat-button><mat-icon>logout</mat-icon>Logout</button>
+    </mat-toolbar>
+    <!-- Add Content Here -->
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>
